@@ -14,7 +14,7 @@ export class HeaderComponent implements AfterViewInit {
   }
   ngAfterViewInit(){
     this.replayVideo();
-    this.changeTextColor();
+    // this.changeTextColor();
   }
   replayVideo(){
     const  homeVideo:HTMLVideoElement  = this.document.getElementById('home-video') as HTMLVideoElement;

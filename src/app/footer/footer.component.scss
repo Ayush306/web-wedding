@@ -1,0 +1,35 @@
+.footer-section{
+    background-color: black;
+    padding: 30px 20px;
+    
+}
+.socal-media-icons span svg{
+    width: 25px;
+    cursor: pointer;
+}
+.socal-media-icons{
+    
+    padding-left: 10px;
+    padding-top: 5px;
+    display: flex;
+    gap: 16px;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.footer-logo img{
+    width: 140px;
+}
+.left-footer{
+    padding-left: 120px;
+
+}
+.contact-us,.address,.policy{
+    color: white;
+    font-size: 12px;
+}

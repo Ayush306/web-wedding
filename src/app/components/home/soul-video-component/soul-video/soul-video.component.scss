@@ -1,5 +1,44 @@
 .soul-container video{
     object-fit: cover;
     filter: contrast(120%) brightness(110%);
+    filter: grayscale(100%);
     backface-visibility: hidden;
+    
 }
+.soul-container{
+    position: relative;
+    height: 400px;
+}
+.sloped-line {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%; /* Adjust as needed to cover the entire container */
+    height: 100%;
+    background: linear-gradient(to bottom right, transparent 49.5%, white 49.5%, white 50.5%, transparent 50.5%);
+    transform: skewY(-10deg); /* Adjust the skew angle as needed */
+    z-index: 1; /* Ensure the line appears above the video */
+  }
+  .soul-overlay{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  .soul-overlay img{
+    width: 500px;
+  }
+  .soul-container-img{
+    display: flex;
+    justify-content: center;
+
+  }
+ #soul-text{
+    color: white;
+    font-size: 12px;
+  }
+  .award-section .award-heading{
+    margin: auto;
+    text-align: center;
+  }
