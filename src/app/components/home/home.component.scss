@@ -1,0 +1,107 @@
+.home-wrapper{
+    // position: relative;
+}
+.mordern-approach{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "heading heading right-img"
+                          "left-img center-text right-img"
+                          "left-img bottom-img bottom-img";
+    gap: 20px;
+}
+    .heading{
+        grid-area: heading;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .heading img{
+        width: 700px;
+    }
+    .left-img{
+        grid-area: left-img;
+    }
+    .left-img img{
+        width: 100%;
+
+    }
+    .right-img{
+        grid-area: right-img;
+    }
+    .right-img img{
+        width: 100%;
+    }
+    .center-text{
+        grid-area: center-text;
+    }
+    .center-text{
+    }
+    .bottom-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: bottom-img;
+    }
+    .bottom-img img{
+        width: 100%;
+    }   
+
+
+.center-text p{
+    font-size: 14px !important;
+    color: #96918C;
+}
+.web-carosual-section{
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+
+}
+.web-carosual-section .img img {
+    width: 100%;
+    height: 400px;
+    image-rendering: pixelated;
+
+
+}
+.carosual-card{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+.collection-section .para{
+    display: flex;
+    justify-content:center;
+    // align-items: center;
+    font-size: 14px;
+
+}
+.collection-cards .collection-card .img img{
+    width: 100%;
+    height:100%;
+    // image-rendering: crisp-edges;
+}
+.collection-cards .collection-card .img{
+    margin-bottom: 10px;
+}
+.collection-cards .collection-card .image-text span{
+    font-size: 12px;
+    font-weight: 600;
+}
+.collection-cards .collection-card .image-text .date{
+    font-size: 10px;
+    color: #96918C;
+}
+.collection-section .blog-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog-button .blog-btn{
+    padding: 20px 90px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    margin-top: 40px;
+}

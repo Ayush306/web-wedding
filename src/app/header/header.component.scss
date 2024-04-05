@@ -1,0 +1,114 @@
+.header-wrraper{
+    position: relative;
+}
+
+
+.header-wrraper nav{
+    position: absolute;
+    top:10px;
+    width: 100%;
+    padding: 0px
+}
+.web-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    gap:50px;
+}
+.web-nav{
+    background: transparent;
+}
+.web-nav a{
+    color: white;
+    
+}
+.web-navbar ul li a,button{
+    color: white;
+    font-weight: normal;
+}
+.web-navbar ul li{
+    // height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    display: flex;
+    letter-spacing: 0px;
+    align-items: center;
+    justify-self: center;
+    line-height: 1.2;
+
+    border-radius: 20px;
+    padding: 12px;
+}
+.web-navbar ul li:hover{
+    background-color: #ea1068;
+
+}
+.web-navbar .flexy-menu{
+    gap:5px;
+}
+.menu-item:hover{
+
+    background-color: #ea1068;
+
+}
+.menu-item:active{
+    border-bottom-color: rgb(37, 181, 184) !important;
+}
+
+// new code
+
+
+.main-header-bg{
+    width: 100vw;
+    background-size: cover;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+}
+.logo img{
+    width: 400px;
+
+}
+.social-media-handel{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social-media-handel svg{
+    width: 25px;
+    cursor: pointer;    
+}
+#twitter:hover  path{
+    fill: white;
+}
+#facebook:hover  path{
+    fill: white;
+}
+#instagram:hover path
+{
+    fill: white;
+
+}
+
+.web-btn{
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #ea1068;
+
+}
+.web-btn:hover{
+    background-color: #d85590;
+
+}
+.nav-wrapper{
+    display: flex;
+    gap: 80px;
+}
+.textColor{
+    text-decoration: none;
+}
