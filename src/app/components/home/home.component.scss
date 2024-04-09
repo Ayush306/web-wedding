@@ -119,5 +119,56 @@
         width: 50%;
 }
 .web-carosual-section::ng-deep .p-carousel-items-content {
-    height: 270px !important;
+    // height: 270px !important;
 }
+@media  screen and (max-width: 566.98px) {
+    .col-p-2{
+        padding: 8px
+    }
+    .mordern-approach{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: .1fr 1fr 1fr .1fr;
+        grid-template-areas:
+         "heading heading"
+        "left-img  right-img"
+        "center-text center-text"
+        "bottom-img bottom-img";
+        gap: 10px;
+    }
+    .mordern-approach .heading img{
+        width: 100%;
+    }
+    .mordern-approach .right-img{
+        margin-top: 80px;
+    }
+
+      
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    // .mordern-approach{
+    //     display: grid;
+    //     grid-template-columns:1fr 1fr;
+    //     grid-template-rows: .1fr 1fr 1fr .1fr;
+    //     grid-template-areas:
+    //      "heading heading"
+    //     "left-img  right-img"
+    //     "center-text center-text"
+    //     "bottom-img bottom-img";
+    //     gap: 10px;
+    // }
+    // .mordern-approach .heading img{
+    //     width: 100%;
+    // }
+    // .mordern-approach .right-img{
+    //     margin-top: 80px;
+    // }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+ 
+}
+@media (min-width: 1399.98px) { }

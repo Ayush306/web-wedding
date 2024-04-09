@@ -33,3 +33,24 @@
     color: white;
     font-size: 12px;
 }
+.address-section{
+    margin: auto;
+}
+@media  screen and (max-width: 566.98px) {
+    .footer-logo{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    .left-footer{
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .address-section{
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { }

@@ -21,7 +21,7 @@
   }
   .soul-overlay{
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -43,4 +43,9 @@
   .award-section .award-heading{
     margin: auto;
     text-align: center;
+  }
+  @media  screen and (max-width: 566.98px) {
+    .soul-container-img img{
+      width: 100%;
+  }
   }

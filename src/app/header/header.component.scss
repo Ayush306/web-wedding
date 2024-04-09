@@ -1,37 +1,41 @@
 .header-wrraper{
     position: relative;
 }
-.main-header-bg video{
-    // transform: rotate(-90deg);
 
-}
 
 .header-wrraper nav{
     position: absolute;
-    top:-25px;
+    top:7px;
     width: 100%;
     padding: 0px
 }
 .web-navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0px;
-    gap:50px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    width: 100%;
+
+  
 }
-.web-nav{
-    background: transparent;
-}
+
 .web-nav a{
     color: white;
     
 }
 .web-navbar ul li a,button{
     color: white;
+    padding: 10px;
     font-weight: normal;
+    border-radius: 20px;
+}
+.web-navbar ul li a:hover{
+
+    background-color: #ea1068;
+}
+.web-navbar ul {
+    justify-content: space-evenly;
 }
 .web-navbar ul li{
-    // height: 76px;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,21 +46,10 @@
     justify-self: center;
     line-height: 1.2;
 
-    border-radius: 20px;
-    padding: 12px;
 }
-.web-navbar ul li:hover{
-    background-color: #ea1068;
 
-}
-.web-navbar .flexy-menu{
-    gap:5px;
-}
-.menu-item:hover{
 
-    background-color: #ea1068;
 
-}
 .menu-item:active{
     border-bottom-color: rgb(37, 181, 184) !important;
 }
@@ -71,7 +64,7 @@
     background-repeat: no-repeat;
 }
 .logo img{
-    width: 400px;
+    width: 200px;
 
 }
 .social-media-handel{
@@ -114,4 +107,137 @@
 }
 .textColor{
     text-decoration: none;
+}
+
+
+// For Mobile responsive
+
+@media  screen and (max-width: 566.98px) {
+    .nav-container{
+        justify-content: flex-end;
+        padding: 10px;
+
+    }
+    .web-navbar .logo {
+        // display: none;
+        display: flex;
+        justify-content: center;
+
+    }
+    .web-navbar .logo img{
+        width: 130px;
+    }
+    .web-navbar{
+        display: block;
+    }
+
+  
+    .web-nav{
+        display: block;
+        // background: #ffbfec;
+    }
+    .social-media-handel{
+        justify-content: center;
+    }
+    .main-header-bg video{
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .nav-container{
+        justify-content: flex-end;
+        padding: 10px;
+
+    }
+    .web-navbar .logo {
+        // display: none;
+        display: flex;
+        justify-content: center;
+
+    }
+    .web-navbar .logo img{
+        width: 130px;
+    }
+    .web-navbar{
+        display: block;
+    }
+
+  
+    .web-nav{
+        display: block;
+        // background: #ffbfec;
+    }
+    .social-media-handel{
+        justify-content: center;
+    }
+    .main-header-bg video{
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .nav-container{
+        justify-content: flex-end;
+        padding: 10px;
+
+    }
+    .web-navbar .logo {
+        // display: none;
+        display: flex;
+        justify-content: center;
+
+    }
+    .web-navbar .logo img{
+        width: 130px;
+    }
+    .web-navbar{
+        display: block;
+    }
+
+  
+    .web-nav{
+        display: block;
+        // background: #ffbfec;
+    }
+    .social-media-handel{
+        justify-content: center;
+    }
+    .main-header-bg video{
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .main-header-bg video{
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+
+}
+@media (min-width: 1399.98px) { 
+
 }
