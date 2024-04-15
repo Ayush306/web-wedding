@@ -1,13 +1,19 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { SoulVideoComponent } from './soul-video-component/soul-video/soul-video.component';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CarouselModule,
-    SoulVideoComponent
+    SoulVideoComponent,
+    DialogModule,
+    ButtonModule,
+    CommonModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
@@ -15,7 +21,11 @@ import { SoulVideoComponent } from './soul-video-component/soul-video/soul-video
 export class HomeComponent implements AfterViewInit,OnInit{
   responsiveOptions: any[] | undefined;
   products:any;
- 
+  visible: boolean = false;
+  contactContainer:string = "contact-us-container"
+  position: "center" | "top" | "bottom" | "left" | "right" | "topleft" | "topright" | "bottomleft" | "bottomright" = 'bottomright';
+  // position: string='';
+   
   constructor(){
 
     this.products =
@@ -88,11 +98,19 @@ export class HomeComponent implements AfterViewInit,OnInit{
       },
   ];
 }
+
   ngOnInit(){
     // console.log("dfgdf",this.products);
     
   }
 ngAfterViewInit(){
+  
+}
+
+showDialog(position: any) {
+  this.position = position;
+  this.visible = true;
+  console.log(this.visible);
   
 }
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     RouterOutlet,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
