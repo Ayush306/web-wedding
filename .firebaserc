@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "web-wedding123"
-  }
+    "default": "frameupmoments",
+    "frameup": "frameupmoments"
+  },
+  "targets": {},
+  "etags": {}
 }
