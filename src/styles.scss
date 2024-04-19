@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 *{
     margin: 0px;
@@ -10,4 +10,9 @@
 }
 body{
     overflow-x: hidden;
+}
+
+:root{
+    --web-primary-color:#ea1068;
+    --secondory-color:#fff;
 }

@@ -4,6 +4,7 @@ import { SoulVideoComponent } from './soul-video-component/soul-video/soul-video
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
+import { ConnectOnWhatsappComponent } from './connect-on-whatsapp/connect-on-whatsapp.component';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,8 @@ import { CommonModule } from '@angular/common';
     SoulVideoComponent,
     DialogModule,
     ButtonModule,
-    CommonModule
+    CommonModule,
+    ConnectOnWhatsappComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
@@ -107,11 +109,7 @@ ngAfterViewInit(){
   
 }
 
-showDialog(position: any) {
-  this.position = position;
-  this.visible = true;
-  console.log(this.visible);
-  
-}
+
+
 
 }
