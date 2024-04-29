@@ -1,0 +1,30 @@
+.stroy-galllery-section {
+
+    padding-top: 160px;
+    .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+
+        h1 {
+            font-size: 4rem;
+
+        }
+    }
+}
+
+.galllery-row {
+    width: 100vw;
+}
+
+.column {
+    float: left;
+    width: 50%;
+
+    padding: 2px;
+}
+
+.column img {
+    width: 100%;
+}

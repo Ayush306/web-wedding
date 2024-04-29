@@ -1,28 +1,26 @@
 .header-wrraper{
-    position: relative;
-}
-
-
-.header-wrraper nav{
     position: absolute;
-    top:7px;
-    width: 100%;
-    padding: 0px
-}
-.web-navbar{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    width: 100%;
-
-  
+    z-index: 99;
+    width: 100vw;
 }
 
-.web-nav a{
-    color: white;
+
+.header-wrraper .web-nav{
+    // position: absolute;
+    // top:7px;
+    width: 100%;
+    // padding: 0px
+}
+.web-nav{
+    position: absolute;
+}
+.web-nav
+ a{
+    color: black;
     
 }
 .web-navbar ul li a,button{
-    color: white;
+    color: black;
     padding: 10px;
     font-weight: normal;
     border-radius: 20px;
@@ -32,7 +30,7 @@
     background-color: #ea1068;
 }
 .web-navbar ul {
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 .web-navbar ul li{
  
@@ -40,8 +38,9 @@
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    display: flex;
+    display: flex;  
     letter-spacing: 0px;
+    color: black;
     align-items: center;
     justify-self: center;
     line-height: 1.2;
@@ -57,25 +56,23 @@
 // new code
 
 
-.main-header-bg{
-    width: 100vw;
-    background-size: cover;
-    margin-bottom: 50px;
-    background-repeat: no-repeat;
-}
 .logo{
     align-items: center;
     display: flex;
     justify-content: center;
+    a{
+        margin-top: 40px;
+    }
 }
 .logo img{
     width: 200px;
+    filter: grayscale(100%) brightness(0%);
 
 }
 .social-media-handel{
     display: flex;
-    gap: 30px;
-    justify-content: flex-end;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
 }
 .social-media-handel svg{
@@ -113,7 +110,40 @@
 .textColor{
     text-decoration: none;
 }
+.header-strip{
+    position: absolute;
+    top:0;
+    width: 100vw;
+    z-index: 99;
+    background-color: transparent;
 
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        margin: 0px;
+        padding: 10px 0px;
+        // background-color: var(--light-pink);
+        z-index: 99999;
+        li{
+            cursor: pointer;
+            // color: #fff;
+            color: black;
+            list-style: none;
+
+            &:hover{
+                cursor: pointer;
+                color: var(--web-primary-color);
+            }
+        }
+    }
+}
+.web-navbar{
+    display: grid;
+    width: 100%;
+    grid-template-columns:3fr 1fr;    
+}
 
 // For Mobile responsive
 
@@ -121,7 +151,17 @@
     .nav-container{
         justify-content: flex-end;
         padding: 10px;
+        // height: 100vh;
+        // background: #fff;
+        // opacity: .7;
 
+    }
+    .logo{
+        display: none;
+    }
+    nav .show{
+        // height: 100vh;
+        background-color: #fff;
     }
     .web-navbar .logo {
         // display: none;
@@ -160,6 +200,9 @@
         justify-content: flex-end;
         padding: 10px;
 
+    }
+    .logo{
+        display: none;
     }
     .web-navbar .logo {
         // display: none;

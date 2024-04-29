@@ -1,10 +1,13 @@
 import { DOCUMENT } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, Inject, Renderer2 } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -12,6 +15,7 @@ export class HeaderComponent implements AfterViewInit {
   constructor(private render:Renderer2 , @Inject(DOCUMENT)  private document: Document){
 
   }
+  showNav:boolean = false;
   ngAfterViewInit(){
     this.replayVideo();
     // this.changeTextColor();
@@ -23,6 +27,7 @@ export class HeaderComponent implements AfterViewInit {
 
       homeVideo?.addEventListener('ended',()=>{
         homeVideo.play();
+        homeVideo.muted;
       })
     }
 
@@ -52,5 +57,24 @@ export class HeaderComponent implements AfterViewInit {
         }
         }, 100); // Adjust every second
       });
+  }
+  makeStyle(){
+    this.showNav = !this.showNav;
+    const headerWrraper:HTMLElement = this.document.getElementById('headerId') as HTMLElement;
+    if(this.showNav){
+
+      if(headerWrraper){
+        headerWrraper.style.height = '100vh';
+        headerWrraper.style.backgroundColor = '#fff';
+        // const body:HTMLElement = this.document.getElementsByTagName('body')[0] as HTMLElement;
+        // body.style.overflow = 'hidden';
+      }
+    }else{
+      headerWrraper.style.height = 'auto';
+      headerWrraper.style.backgroundColor = 'transparent';
+      // const body:HTMLElement = this.document.getElementsByTagName('body')[0] as HTMLElement;
+      // body.style.overflow = 'auto';
+
+    }
   }
 }

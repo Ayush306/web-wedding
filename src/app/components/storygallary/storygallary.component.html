@@ -1,0 +1,12 @@
+<div class="stroy-galllery-section  container-fluid" >
+    <div class="name">
+        <h1>{{personName}}</h1>
+    </div>
+    <div class="row galllery-row">
+        @for (item of galleryImages; track $index) {
+            <div class="column">
+                <img src="'./../../../../assets/allgallery/{{item.path}}" alt="">
+            </div>
+        }
+    </div>
+</div>

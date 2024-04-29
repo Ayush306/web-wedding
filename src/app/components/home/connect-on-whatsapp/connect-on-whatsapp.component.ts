@@ -12,7 +12,7 @@ import { Router } from 'express';
 export class ConnectOnWhatsappComponent {
   constructor(){}
   connect(){
-    const phone = '+918700838844';
+    const phone = '+918791300248';
     const text = 'I want to know more about your services!'
     const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(whatsappLink,'_blank');
